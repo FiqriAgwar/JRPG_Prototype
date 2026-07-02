@@ -40,6 +40,10 @@ public class MovementController : MonoBehaviour
 
     void FixedUpdate()
     {
+        if (!canMove) { 
+            return;
+        }
+
         rigidbody.linearVelocity =
             new Vector3(
                 moveInput.x * movementSpeed,
@@ -54,5 +58,10 @@ public class MovementController : MonoBehaviour
     public void EnableMovement() { canMove = true;  }
 
     public void DisableMovement() { canMove = false; }
+
+    public void ForceStopMovement()
+    {
+        rigidbody.linearVelocity = Vector3.zero;
+    }
 
 }

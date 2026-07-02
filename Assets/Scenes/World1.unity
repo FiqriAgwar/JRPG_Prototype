@@ -4831,7 +4831,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Press [E] to interact
+  m_text: Press [Space] to interact
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -6698,6 +6698,7 @@ GameObject:
   - component: {fileID: 1853415734}
   - component: {fileID: 1853415731}
   - component: {fileID: 1853415733}
+  - component: {fileID: 1853415735}
   m_Layer: 0
   m_Name: Flowchart
   m_TagString: Untagged
@@ -6815,7 +6816,7 @@ MonoBehaviour:
   selectedBlocks:
   - {fileID: 1853415724}
   selectedCommands:
-  - {fileID: 1853415731}
+  - {fileID: 1853415735}
   variables: []
   description: 
   stepPause: 0
@@ -7361,6 +7362,7 @@ MonoBehaviour:
   eventHandler: {fileID: 0}
   commandList:
   - {fileID: 1853415734}
+  - {fileID: 1853415735}
   - {fileID: 1853415733}
   - {fileID: 1853415726}
   - {fileID: 1853415725}
@@ -7578,6 +7580,23 @@ MonoBehaviour:
   indentLevel: 0
   targetObject: {fileID: 1211419108508402416}
   methodName: DisableMovement
+  delay: 0
+--- !u!114 &1853415735
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1853415691}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 17a200dbd67304446a3019434503338a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Fungus::Fungus.CallMethod
+  itemId: 39
+  indentLevel: 0
+  targetObject: {fileID: 1211419108508402416}
+  methodName: ForceStopMovement
   delay: 0
 --- !u!1 &1887265716
 GameObject:
